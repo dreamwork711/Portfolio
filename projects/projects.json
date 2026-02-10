@@ -1,0 +1,42 @@
+[
+  {
+    "name": "VacationRenter",
+    "desc": "Worked on the design and evolution of a large-scale vacation rental platform built to handle high traffic volumes and rapid growth. I contributed to a containerized microservices architecture using Docker and Kubernetes, enabling reliable service isolation, consistent environments, and smooth scalability across production systems. I helped design and maintain an automated CI/CD pipeline that streamlined build, test, and deployment workflows, significantly improving release velocity while reducing operational risk.",
+    "images": [
+      "VacationRenter-1.png",
+      "VacationRenter-2.png",
+      "VacationRenter-3.png"
+    ],
+    "links": {
+      "view": "https://vacationrenter.com/",
+      "code": "https://github.com/kidus-befekadu"
+    }
+  },
+  {
+    "name": "Cowboy",
+    "desc": "Contributed to the development and evolution of Cowboy's digital platform, supporting the online presence of a connected e-bike brand focused on urban mobility and smart hardware experiences. I worked on scalable, user-facing systems that showcased products, technical features, and customer services such as test rides, leasing, accessories, and warranty management, ensuring a seamless experience from discovery through purchase. My work focused on building and maintaining reliable, performance-oriented web services and frontend integrations that supported high traffic volumes across multiple regions. I collaborated closely with product, design, and engineering teams to translate business and brand requirements into robust technical solutions, while ensuring the platform remained responsive, maintainable, and aligned with Cowboy's connected-device ecosystem. Throughout the project, I emphasized clean architecture, system reliability, and long-term scalability to support both e-commerce growth and evolving product capabilities.",
+    "images": [
+      "cowboy-1.png",
+      "cowboy-2.png",
+      "cowboy-3.png"
+    ],
+    "links": {
+      "view": "https://cowbow.com/",
+      "code": "https://github.com/kidus-befekadu"
+    }
+  },
+  {
+    "name": "Trioclear Smile Generator",
+    "desc": "Worked on the development of an AI-powered web application that generates realistic smile previews by aligning teeth using a self-hosted machine learning model. I contributed to building the end-to-end workflow that allows users to securely upload dental images, process them through an internal AI inference pipeline, and return visually accurate, near-real-time results through a responsive web interface.My work focused on integrating the self-hosted AI model into scalable backend services, optimizing image processing performance, and ensuring reliable handling of user uploads. I collaborated closely with product, design, and clinical stakeholders to balance accuracy, usability, and system reliability, while implementing secure data handling practices suitable for sensitive medical imagery. Throughout the project, I emphasized maintainable architecture, performance optimization, and a smooth user experience to support both clinical use and consumer-facing interactions.",
+    "images": [
+      "trioclear-1.jpg",
+      "trioclear-2.jpg",
+      "trioclear-3.jpg",
+      "trioclear-4.jpg"
+    ],
+    "links": {
+      "view": "https://smilegenerator.trioclear.com/",
+      "code": "https://github.com/kidus-befekadu"
+    }
+  }
+]
