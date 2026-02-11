@@ -91,6 +91,7 @@ async function fetchData(type = "skills") {
 
 function showSkills(skillsData) {
     let skillsContainer = document.getElementById("skillsContainer");
+    const fallbackSkillIcon = "https://img.icons8.com/fluency/48/000000/code.png";
     
     if (!skillsContainer) {
         console.error("Skills container not found!");
@@ -130,11 +131,17 @@ function showSkills(skillsData) {
             // Add skills for this category
             if (Array.isArray(skillsData[category])) {
                 skillsData[category].forEach(skill => {
+                    const iconUrl = (skill && typeof skill.icon === "string" && skill.icon.trim().length > 0)
+                        ? skill.icon
+                        : fallbackSkillIcon;
+                    const skillName = (skill && typeof skill.name === "string" && skill.name.trim().length > 0)
+                        ? skill.name
+                        : "Skill";
                     skillHTML += `
                         <div class="bar">
                             <div class="info">
-                                <img src="${skill.icon}" alt="${skill.name}" />
-                                <span>${skill.name}</span>
+                                <img src="${iconUrl}" alt="${skillName}" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='${fallbackSkillIcon}';" />
+                                <span>${skillName}</span>
                             </div>
                         </div>`;
                 });
@@ -315,7 +322,7 @@ function showProjects(projects) {
         origin: 'top',
         distance: '80px',
         duration: 1000,
-        reset: true
+        reset: false
     });
 
     /* SCROLL PROJECTS */
@@ -427,7 +434,7 @@ const srtop = ScrollReveal({
     origin: 'top',
     distance: '80px',
     duration: 1000,
-    reset: true
+    reset: false
 });
 
 /* SCROLL HOME */
@@ -450,10 +457,6 @@ srtop.reveal('.about .content p', { delay: 200 });
 srtop.reveal('.about .content .box-container', { delay: 200 });
 srtop.reveal('.about .content .resumebtn', { delay: 200 });
 
-
-/* SCROLL SKILLS */
-srtop.reveal('.skills .container', { interval: 200 });
-srtop.reveal('.skills .container .bar', { delay: 400 });
 
 /* SCROLL EDUCATION */
 srtop.reveal('.education .box', { interval: 200 });
