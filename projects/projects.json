@@ -38,5 +38,56 @@
       "view": "https://smilegenerator.trioclear.com/",
       "code": "https://github.com/kidus-befekadu"
     }
+  },
+  {
+    "name": "Testing Playground Website",
+    "desc": "Designed and developed a sandbox web application intended as a controlled environment for experimenting with modern web development techniques, frameworks, and architectural patterns. The platform served as a rapid prototyping space where new ideas could be validated before being introduced into production systems, reducing implementation risk and improving engineering confidence. I used the environment to evaluate frontend frameworks, backend service patterns, API integrations, and state-management strategies, while also testing CI/CD workflows, containerization setups, and performance optimization techniques. The project enabled iterative experimentation with scalable architectures, reusable component libraries, and event-driven communication patterns. Beyond prototyping, it functioned as a skill-refinement platform for exploring emerging tools, improving development workflows, and benchmarking performance across different technology stacks. This initiative strengthened system design decisions in production environments by allowing architectural trade-offs, integration approaches, and deployment strategies to be tested in isolation before wider adoption.",
+    "images": [
+      "testing-playground-1.jpg",
+      "testing-playground-2.jpg",
+      "testing-playground-3.jpg"
+    ],
+    "links": {
+      "view": "https://www.testing-playground.andy-hk.com//",
+      "code": "https://github.com/kidus-befekadu"
+    }
+  },
+  {
+    "name": "COSMOPEDIA",
+    "desc": "Designed and developed a sandbox web application intended as a controlled environment for experimenting with modern web development techniques, frameworks, and architectural patterns. The platform served as a rapid prototyping space where new ideas could be validated before being introduced into production systems, reducing implementation risk and improving engineering confidence. I used the environment to evaluate frontend frameworks, backend service patterns, API integrations, and state-management strategies, while also testing CI/CD workflows, containerization setups, and performance optimization techniques. The project enabled iterative experimentation with scalable architectures, reusable component libraries, and event-driven communication patterns. Beyond prototyping, it functioned as a skill-refinement platform for exploring emerging tools, improving development workflows, and benchmarking performance across different technology stacks. This initiative strengthened system design decisions in production environments by allowing architectural trade-offs, integration approaches, and deployment strategies to be tested in isolation before wider adoption.",
+    "images": [
+      "cosmopedia-1.png",
+      "cosmopedia-2.png",
+      "cosmopedia-3.png",
+      "cosmopedia-4.png"
+    ],
+    "links": {
+      "view": "https://huggingface.co/spaces/aradhyapavan/casmopedia/",
+      "code": "https://github.com/kidus-befekadu"
+    }
+  },
+  {
+    "name": "Daily Philosophy",
+    "desc": "Designed and developed Daily Philosophy, a reflective web platform built to encourage independent critical thinking by intentionally limiting AI-assisted writing. The application presents a new thought-provoking question each day and challenges users to submit their own reflections within a 24-hour window, reinforcing cognitive engagement and consistent intellectual practice.I architected the platform with a focus on simplicity, clarity, and behavioral design principles, ensuring that the user experience promotes deliberate thinking rather than passive content consumption. The system includes time-bound submission logic, daily content scheduling workflows, and secure user authentication to maintain integrity and fairness. I implemented scalable backend services and lightweight frontend components to ensure performance and reliability while keeping the interface distraction-free.",
+    "images": [
+      "daily-philosophy-1.png",
+      "daily-philosophy-2.png"
+    ],
+    "links": {
+      "view": "https://dailyphilosophy.rknastenka.com",
+      "code": "https://github.com/kidus-befekadu"
+    }
+  },
+  {
+    "name": "Restaurant Site",
+    "desc": "Designed and developed a sophisticated, high-performance restaurant website using Next.js to showcase a fictional fine dining brand. The platform was built to reflect a premium dining experience through refined UI design, structured content presentation, and seamless navigation across menu offerings, team profiles, and ambiance highlights.I implemented server-side rendering and optimized routing to ensure strong performance, SEO visibility, and fast load times. The booking workflow was engineered with form validation, secure data handling, and backend integration to simulate real-world reservation management. The architecture emphasized clean component structure, reusable UI patterns, and responsive design to ensure consistency across devices. Throughout the project, I focused on balancing aesthetics with performance, applying modern frontend engineering practices while maintaining scalability and maintainability. The result is a production-ready web experience that demonstrates strong full-stack fundamentals, user-centered design, and attention to detail in both functionality and presentation.",
+    "images": [
+      "restaurant-site-1.png",
+      "restaurant-site-2.png"
+    ],
+    "links": {
+      "view": "https://www.benoldham.dev/projects/fine-dining-restaurant/",
+      "code": "https://github.com/kidus-befekadu"
+    }
   }
 ]

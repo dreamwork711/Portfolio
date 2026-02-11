@@ -70,11 +70,11 @@
         },
         {
             "name": "Kafka",
-            "icon": "https://img.icons8.com/color/48/000000/apache-kafka.png"
+            "icon": "https://img.icons8.com/nolan/1200/apache-kafka.jpg"
         },
         {
             "name": "RabbitMQ",
-            "icon": "https://img.icons8.com/color/48/000000/rabbitmq.png"
+            "icon": "https://www.rabbitmq.com/img/rabbitmq-logo.svg"
         }
     ],
     "Databases": [
