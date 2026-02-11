@@ -121,6 +121,27 @@ function goToSlide(index) {
     updateCarousel();
 }
 
+function initializeModalViewLink() {
+    const modalViewLink = document.getElementById('modalViewLink');
+    if (!modalViewLink || modalViewLink.dataset.bound === 'true') {
+        return;
+    }
+
+    modalViewLink.dataset.bound = 'true';
+    modalViewLink.addEventListener('click', function (e) {
+        e.stopPropagation();
+        const href = modalViewLink.getAttribute('href');
+
+        if (!href || href === '#') {
+            e.preventDefault();
+            return;
+        }
+
+        e.preventDefault();
+        window.open(href, '_blank', 'noopener,noreferrer');
+    });
+}
+
 // Make functions globally accessible
 window.openModal = openModal;
 window.closeModal = closeModal;
@@ -203,6 +224,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Carousel navigation
     const prevBtn = document.querySelector('.prev-btn');
     const nextBtn = document.querySelector('.next-btn');
+
+    initializeModalViewLink();
     
     if (prevBtn) {
         prevBtn.addEventListener('click', prevSlide);

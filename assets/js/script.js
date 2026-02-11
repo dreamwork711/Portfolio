@@ -242,6 +242,27 @@ function goToSlide(index) {
     updateCarousel();
 }
 
+function initializeModalViewLink() {
+    const modalViewLink = document.getElementById('modalViewLink');
+    if (!modalViewLink || modalViewLink.dataset.bound === 'true') {
+        return;
+    }
+
+    modalViewLink.dataset.bound = 'true';
+    modalViewLink.addEventListener('click', function (e) {
+        e.stopPropagation();
+        const href = modalViewLink.getAttribute('href');
+
+        if (!href || href === '#') {
+            e.preventDefault();
+            return;
+        }
+
+        e.preventDefault();
+        window.open(href, '_blank', 'noopener,noreferrer');
+    });
+}
+
 // Make functions globally accessible
 window.openModal = openModal;
 window.closeModal = closeModal;
@@ -303,6 +324,8 @@ function showProjects(projects) {
     if (nextBtn) {
         nextBtn.addEventListener('click', nextSlide);
     }
+
+    initializeModalViewLink();
     
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape') {
