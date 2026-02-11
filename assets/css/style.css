@@ -360,7 +360,7 @@ header .navbar ul li a:hover {
 }
 .about .row .image img {
   margin: 4rem;
-  width: 30rem;
+  width: 60rem;
   height: auto;
   border-radius: 5%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
@@ -1327,7 +1327,7 @@ header .navbar ul li a:hover {
   border-color: rgba(37, 6, 173, 0.3);
 }
 .experience .content .tag {
-  font-size: 1.8rem;
+  font-size: 2.1rem;
   padding: 2rem 2rem 0.5rem 2.5rem;
   font-weight: 700;
   color: #2506ad;
@@ -1335,7 +1335,7 @@ header .navbar ul li a:hover {
 }
 .experience .content .tag h2 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 2.4rem;
   background: linear-gradient(135deg, #2506ad 0%, #5c40d6 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1345,14 +1345,14 @@ header .navbar ul li a:hover {
   padding: 0.5rem 2.5rem 2rem 2.5rem;
 }
 .experience .content .desc h3 {
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   font-weight: 700;
   color: #1a1a2e;
   margin-bottom: 0.5rem;
   text-transform: none;
 }
 .experience .content .desc p {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   color: #5c40d6;
   margin-bottom: 1.2rem;
   font-weight: 500;
@@ -1364,8 +1364,8 @@ header .navbar ul li a:hover {
   margin-top: 1.5rem;
 }
 .experience .content .desc ul li {
-  font-size: 1.2rem;
-  line-height: 1.8;
+  font-size: 1.45rem;
+  line-height: 1.9;
   margin-bottom: 1rem;
   padding-left: 2.5rem;
   position: relative;
@@ -1396,8 +1396,8 @@ header .navbar ul li a:hover {
   background: linear-gradient(135deg, #2506ad 0%, #5c40d6 100%);
   color: #ffffff;
   border: none;
-  padding: 0.8rem 2rem;
-  font-size: 1.2rem;
+  padding: 1rem 2.2rem;
+  font-size: 1.4rem;
   font-weight: 600;
   border-radius: 8px;
   cursor: pointer;
@@ -1508,23 +1508,23 @@ header .navbar ul li a:hover {
     left: 0%;
   }
   .experience .content .tag {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     padding: 1.5rem 1.5rem 0.5rem 2rem;
   }
   .experience .content .tag h2 {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
   .experience .content .desc {
     padding: 0.5rem 1.5rem 1.5rem 2rem;
   }
   .experience .content .desc h3 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
   .experience .content .desc p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
   .experience .content .desc ul li {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     line-height: 1.6;
     padding-left: 2rem;
   }
