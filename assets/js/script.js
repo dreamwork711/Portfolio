@@ -38,19 +38,48 @@ $(document).ready(function () {
     });
 
     // <!-- emailjs to mail contact form data -->
+    function openMailtoFallback(name, email, phone, message) {
+        const subject = encodeURIComponent(`Portfolio Contact - ${name || "Website Visitor"}`);
+        const body = encodeURIComponent(
+            `Name: ${name || ""}\nEmail: ${email || ""}\nPhone: ${phone || ""}\n\nMessage:\n${message || ""}`
+        );
+        const recipient = "kiddbefekaduwork@outlook.com";
+        window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
+    }
+
     $("#contact-form").submit(function (event) {
+        event.preventDefault();
+
+        const formElement = document.getElementById("contact-form");
+        const formData = new FormData(formElement);
+        const name = (formData.get("name") || "").toString().trim();
+        const email = (formData.get("email") || "").toString().trim();
+        const phone = (formData.get("phone") || "").toString().trim();
+        const message = (formData.get("message") || "").toString().trim();
+
         emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
 
-        emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
+        emailjs.sendForm("contact_service", "template_contact", "#contact-form")
             .then(function (response) {
-                console.log('SUCCESS!', response.status, response.text);
-                document.getElementById("contact-form").reset();
-                alert("Form Submitted Successfully");
-            }, function (error) {
-                console.log('FAILED...', error);
-                alert("Form Submission Failed! Try Again");
+                console.log("SUCCESS!", response.status, response.text);
+                formElement.reset();
+                alert("Message sent successfully.");
+            })
+            .catch(function (error) {
+                console.log("FAILED...", error);
+
+                const errorMessage = ((error && (error.text || error.message)) || "").toLowerCase();
+                const isQuotaIssue = errorMessage.includes("quota") || errorMessage.includes("upgrade required");
+
+                if (isQuotaIssue) {
+                    alert("Email service quota is reached right now. I will open your email app with a pre-filled draft so you can still send the message.");
+                    openMailtoFallback(name, email, phone, message);
+                    return;
+                }
+
+                alert("Form submission failed. Please try again, or send directly via email.");
+                openMailtoFallback(name, email, phone, message);
             });
-        event.preventDefault();
     });
     // <!-- emailjs to mail contact form data -->
 
@@ -441,6 +470,9 @@ VanillaTilt.init(document.querySelectorAll(".tilt"), {
 
 // Start of Tawk.to Live Chat
 var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+Tawk_API.visitor = {
+    name: 'Kidus Befekadu'
+};
 (function () {
     var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
     s1.async = true;
